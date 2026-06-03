@@ -58,7 +58,7 @@ void app_main(void){
                     vTaskDelay(1);
                 }
                 t0 = xTaskGetTickCount();
-                while((xTaskGetTickCount() - t0) > DEB){
+                while((xTaskGetTickCount() - t0) < DEB){
                     vTaskDelay(1);
                 }
 
