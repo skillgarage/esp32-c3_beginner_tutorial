@@ -1,32 +1,3 @@
-// #include <string.h>
-// #include "freertos/FreeRTOS.h"
-// #include "freertos/task.h"
-// #include "driver/gpio.h"
-// #include "esp_log.h"
-
-
-// #include "led_config.h"
-// #include "button_config.h"
-// #include "uart_config.h"
-
-// void app_main() {
-//     uart_init();
-//     led_init();
-
-//     uint8_t ch;
-
-//     while (1) {
-//         int len = uart_read_bytes(UART_PORT, &ch, 1, portMAX_DELAY);
-//         if (len > 0){
-//             if (ch == '1'){
-//                 gpio_set_level(LED_GPIO, 1);
-//             } else if (ch == '0'){
-//                 gpio_set_level(LED_GPIO, 0);
-//             }
-//         }
-//     }
-// }
-
 #include <string.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
